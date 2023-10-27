@@ -23,7 +23,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
 # defina el servidor para llevar el registro de modelos y artefactos
-# mlflow.set_tracking_uri('http://localhost:5000')
+mlflow.set_tracking_uri('http://localhost:8050')
 # registre el experimento
 experiment = mlflow.set_experiment("sklearn-diab")
 
