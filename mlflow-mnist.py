@@ -21,11 +21,11 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Entrenamiento de una red feed-forward para el problema de clasificación con datos MNIST en TensorFlow/Keras')
 parser.add_argument('--batch_size', '-b', type=int, default=128)
-parser.add_argument('--epochs', '-e', type=int, default=5)
-parser.add_argument('--learning_rate', '-l', type=float, default=0.05)
+parser.add_argument('--epochs', '-e', type=int, default=10)
+parser.add_argument('--learning_rate', '-l', type=float, default=0.03)
 parser.add_argument('--num_hidden_units', '-n', type=int, default=512)
 parser.add_argument('--num_hidden_layers', '-N', type=int, default=1)
-parser.add_argument('--dropout', '-d', type=float, default=0.25)
+parser.add_argument('--dropout', '-d', type=float, default=0.50)
 parser.add_argument('--momentum', '-m', type=float, default=0.85)
 
 mlflow.set_tracking_uri('http://localhost:8050')
