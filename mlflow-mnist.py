@@ -28,6 +28,7 @@ parser.add_argument('--num_hidden_layers', '-N', type=int, default=1)
 parser.add_argument('--dropout', '-d', type=float, default=0.25)
 parser.add_argument('--momentum', '-m', type=float, default=0.85)
 
+mlflow.set_tracking_uri('http://localhost:8050')
 
 args = parser.parse_args([])
 
