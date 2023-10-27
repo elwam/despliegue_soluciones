@@ -95,7 +95,7 @@ def run_mlflow(run_name="MLflow CE MNIST"):
 
 
 # corrida con parámetros diferentes a los por defecto
-args = parser.parse_args(["--batch_size", '256', '--epochs', '10', '--learning_rate', '0.03'])
+args = parser.parse_args(["--batch_size", '128', '--epochs', '15', '--learning_rate', '0.01', '--dropout', '0.50'])
 (experimentID, runID) = run_mlflow()
 print("MLflow Run completed with run_id {} and experiment_id {}".format(runID, experimentID))
 print(tf.__version__)
